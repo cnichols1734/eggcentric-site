@@ -35,14 +35,14 @@ export const LOOP = [
   },
   {
     n: 2,
-    title: "Collect materials",
-    body: "Enemies drop green materials when they die. Materials count as both money and XP, and they get pulled toward you when you are close.",
+    title: "Collect gold",
+    body: "Enemies drop gold when they die. Gold is both your money and your XP, and it gets pulled toward you when you are close.",
     art: "/art/pickups/gold3.png",
   },
   {
     n: 3,
     title: "Level up",
-    body: "Each level up gives you a choice of stat upgrades. The materials you have collected are still yours to spend in the shop.",
+    body: "Each level up gives you a choice of stat upgrades. The gold you have collected is still yours to spend in the shop.",
     art: "/art/pickups/chest-open.png",
   },
   {

@@ -9,7 +9,7 @@ export function Game() {
         <SectionHeading
           kicker="About the game"
           title="How it plays"
-          body="Your weapons aim and fire automatically, so your job is to keep moving, dodge, and pick up the materials enemies drop. Between waves you spend those materials in the shop on new weapons, items and upgrades. Survive all 20 waves and beat the final boss to win the run."
+          body="Your weapons aim and fire automatically, so your job is to keep moving, dodge, and pick up the gold enemies drop. Between waves you spend that gold in the shop on new weapons, items and upgrades. Survive all 20 waves and beat the final boss to win the run."
         />
 
         <div className="mt-14 grid gap-8 lg:grid-cols-[1.15fr_1fr] lg:items-center">

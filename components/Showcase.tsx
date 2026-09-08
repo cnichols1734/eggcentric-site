@@ -30,7 +30,7 @@ const SHOTS = [
     src: "/shots/levelup.jpg",
     alt: "The level-up screen offering a choice of stat upgrades",
     title: "Level up",
-    body: "Materials double as XP. When you level up, you choose a stat upgrade right there in the middle of the wave.",
+    body: "Gold doubles as XP. When you level up, you choose a stat upgrade right there in the middle of the wave.",
   },
   {
     src: "/shots/arena-station.jpg",
