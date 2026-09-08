@@ -9,7 +9,7 @@ export function Footer() {
           <Image src="/art/ui/nichmann-games.png" alt="Nichmann Games" width={72} height={72} className="h-16 w-16 rounded-xl border-[3px] border-ink object-contain bg-panel-deep p-1" />
           <div>
             <p className="display-sm text-cream text-lg">Eggcentric</p>
-            <p className="text-sm font-bold text-cream-dim">A Nichmann Games project. Built with Godot 4.</p>
+            <p className="text-sm font-bold text-cream-dim">Made by Nichmann Games with Godot 4.</p>
           </div>
         </div>
         <ul className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-sm font-bold text-cream-dim">
@@ -19,7 +19,7 @@ export function Footer() {
         </ul>
       </div>
       <p className="mt-8 text-center text-xs font-semibold text-border-dim">
-        Eggcentric is an original game inspired by the arena-survivor genre.
+        &copy; {new Date().getFullYear()} Nichmann Games
       </p>
     </footer>
   );

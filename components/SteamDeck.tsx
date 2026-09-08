@@ -10,8 +10,8 @@ export function SteamDeck() {
       <div className="mx-auto max-w-6xl px-4">
         <SectionHeading
           kicker="Steam Deck"
-          title="Plays great on Deck"
-          body="Eggcentric ships a native Linux build, so it runs on Steam Deck with no compatibility layer. The UI is built for the Deck's 16:10 screen and a controller. Adding it to your library takes about two minutes."
+          title="Runs on Steam Deck"
+          body="Eggcentric has a native Linux build, so it runs on Steam Deck without Proton. The interface is designed for the Deck's 16:10 screen and a controller. Here is how to add it to your Steam library."
         />
 
         <div className="mt-14 grid gap-8 lg:grid-cols-[1fr_1.1fr] lg:items-start">

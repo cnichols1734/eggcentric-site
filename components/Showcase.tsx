@@ -6,37 +6,37 @@ const SHOTS = [
     src: "/shots/shop.jpg",
     alt: "The between-wave shop with four offers, a weapon rack and a stats panel",
     title: "The shop",
-    body: "Buy weapons and passive items, reroll, or lock an offer for the next wave. The stats panel updates as you shop.",
+    body: "Buy weapons and passive items, reroll the offers, or lock one to buy next wave. Your stats update as you shop.",
   },
   {
     src: "/shots/fusion.jpg",
     alt: "Two tier-3 weapons fusing into a new weapon with sparks flying",
     title: "Fusion",
-    body: "Two identical weapons fuse into a higher tier. Some pairs of different weapons have their own recipe.",
+    body: "Two of the same weapon combine into a higher tier. Some pairs of different weapons have their own fusion recipe.",
   },
   {
     src: "/shots/miniboss.jpg",
     alt: "The wave 7 mini-boss arena",
     title: "Mini-bosses",
-    body: "Waves 7 and 14 bring a mini-boss. Wave 20 brings two at once.",
+    body: "A mini-boss shows up on waves 7 and 14. Wave 20 has two at once.",
   },
   {
     src: "/shots/omelette.jpg",
     alt: "The Omelette boss charging at the egg on wave 14",
     title: "The Omelette",
-    body: "Bosses telegraph their charge lanes and landing spots. Dodge the marker, then punish.",
+    body: "Bosses show where they are about to charge or land before they do it, so you have a moment to get out of the way.",
   },
   {
     src: "/shots/levelup.jpg",
     alt: "The level-up screen offering a choice of stat upgrades",
     title: "Level up",
-    body: "Materials are XP. Each level offers a pick of stat upgrades mid-wave.",
+    body: "Materials double as XP. When you level up, you choose a stat upgrade right there in the middle of the wave.",
   },
   {
     src: "/shots/arena-station.jpg",
     alt: "A Horde Rush event on the Space Station with conveyor belts",
     title: "Mid-wave events",
-    body: "Horde rushes, meteor showers and more land partway through a wave with a banner warning.",
+    body: "Horde rushes, meteor showers and other events can hit partway through a wave. A banner warns you before they start.",
   },
 ];
 
@@ -44,7 +44,7 @@ export function Showcase() {
   return (
     <section id="showcase" className="relative stripes py-24 sm:py-28">
       <div className="mx-auto max-w-6xl px-4">
-        <SectionHeading kicker="Screens" title="Between the waves" />
+        <SectionHeading kicker="Screenshots" title="In the game" />
 
         <ul className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {SHOTS.map((s, i) => (

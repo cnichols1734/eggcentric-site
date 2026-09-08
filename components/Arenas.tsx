@@ -8,8 +8,8 @@ export function Arenas() {
       <div className="mx-auto max-w-6xl px-4">
         <SectionHeading
           kicker="Arenas"
-          title="Five floors, five problems"
-          body="Every arena has its own floor and its own hazard. Grease slows you, hay blocks shots, fans shove, conveyors carry. The Quarry is open from the start. The others unlock as you win on higher Danger."
+          title="5 arenas"
+          body="Each arena has its own hazard. Grease on the Diner Floor slows you down, hay bales on the Farmyard block shots, the Rooftop fans push you around, and the Space Station has conveyor belts. The Quarry is unlocked from the start. The rest unlock by winning runs at higher Danger levels."
         />
 
         <ul className="mt-14 grid gap-6 md:grid-cols-2">

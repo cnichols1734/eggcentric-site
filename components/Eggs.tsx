@@ -7,9 +7,9 @@ export function Eggs() {
     <section id="eggs" className="relative stripes py-24 sm:py-28">
       <div className="mx-auto max-w-6xl px-4">
         <SectionHeading
-          kicker="Choose your egg"
-          title="Twelve shells, twelve playstyles"
-          body="Each egg changes the run. Some restrict what the shop sells, some trade armor for dodge, some build turrets so you do not have to aim. The original Egg is available from the start; the rest unlock through play."
+          kicker="Characters"
+          title="12 playable eggs"
+          body="Each egg has different starting stats and a rule that changes how the run plays out. The Chef gets shop discounts, the Vampire heals by dealing damage, and the Robo-Egg builds turrets that do the shooting for it. You start with the plain Egg and unlock the rest by playing."
         />
 
         <ul className="mt-14 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">

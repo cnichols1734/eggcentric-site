@@ -42,7 +42,7 @@ export function DownloadCta({ sizes }: Props) {
         </span>
       </a>
       <p className="text-sm font-bold text-cream-dim">
-        Also for{" "}
+        Also available for{" "}
         {others.map((p, i) => (
           <span key={p.id}>
             <a href={latestDownloadUrl(p.asset)} className="text-gold underline decoration-2 underline-offset-2 hover:text-cream">
@@ -50,8 +50,7 @@ export function DownloadCta({ sizes }: Props) {
             </a>
             {i < others.length - 1 ? " and " : "."}
           </span>
-        ))}{" "}
-        Free. No account.
+        ))}
       </p>
     </div>
   );

@@ -30,25 +30,25 @@ export const LOOP = [
   {
     n: 1,
     title: "Survive the wave",
-    body: "The timer counts down. Weapons aim and fire on their own. You move, dodge, and stay alive. Waves get longer and denser.",
+    body: "Each wave runs on a timer. Your weapons fire on their own while you move and dodge. Later waves last longer and spawn more enemies.",
     art: "/art/enemies/alien-purple.png",
   },
   {
     n: 2,
-    title: "Grab materials",
-    body: "Killed aliens drop green materials. They are both currency and XP, and they magnetise toward you.",
+    title: "Collect materials",
+    body: "Enemies drop green materials when they die. Materials count as both money and XP, and they get pulled toward you when you are close.",
     art: "/art/pickups/gold3.png",
   },
   {
     n: 3,
     title: "Level up",
-    body: "Each level offers a pick of stat upgrades. Bank the rest of your materials for the shop.",
+    body: "Each level up gives you a choice of stat upgrades. The materials you have collected are still yours to spend in the shop.",
     art: "/art/pickups/chest-open.png",
   },
   {
     n: 4,
-    title: "Shop and fuse",
-    body: "Buy weapons (up to six) and passive items, reroll offers, or lock one for later. Two identical weapons fuse into a higher tier.",
+    title: "Shop between waves",
+    body: "Buy weapons (up to six at a time) and passive items, reroll the offers, or lock one to buy later. Two of the same weapon combine into a higher tier.",
     art: "/art/weapons/shotgun.png",
   },
 ] as const;
@@ -69,15 +69,15 @@ export const STEAM_DECK_STEPS = [
   },
   {
     title: "Download the Linux build",
-    body: "Open a browser in Desktop Mode and download Eggcentric-Linux.zip from this page. Save it somewhere you will keep it, such as a folder in Home.",
+    body: "Open a browser in Desktop Mode and download Eggcentric-Linux.zip. Save it somewhere permanent, like a folder in Home.",
   },
   {
     title: "Extract the zip",
-    body: "Right-click the zip and choose Extract Here. You will get a folder containing Eggcentric.x86_64 and its .pck file. Keep them together.",
+    body: "Right-click the zip and choose Extract Here. The folder contains Eggcentric.x86_64 and a .pck file. Keep them together.",
   },
   {
-    title: "Mark it executable if asked",
-    body: "Right-click Eggcentric.x86_64, open Properties, then Permissions, and tick Is executable. Most Decks already have this set.",
+    title: "Mark it executable if needed",
+    body: "Right-click Eggcentric.x86_64, open Properties, then Permissions, and check Is executable. On most Decks this is already set.",
   },
   {
     title: "Add it to Steam",
@@ -85,13 +85,13 @@ export const STEAM_DECK_STEPS = [
   },
   {
     title: "Return to Gaming Mode",
-    body: "Double-click Return to Gaming Mode on the desktop. Eggcentric is in your Library under Non-Steam. No compatibility layer is needed because it is a native Linux build.",
+    body: "Double-click Return to Gaming Mode on the desktop. Eggcentric will be in your Library under Non-Steam Games.",
   },
 ] as const;
 
 export const STEAM_DECK_NOTES = [
-  "The UI is built for 16:10 and a controller, so it fits the Deck screen with no tweaks.",
-  "Controller support works out of the box. Use the default Gamepad layout if Steam asks.",
-  "The game updates itself. Open Options on the title screen and choose Check for Updates.",
-  "Keep the game in a folder you can write to so the built-in updater can swap files.",
+  "The interface is designed for a 16:10 screen and a controller.",
+  "Controller support uses the default Gamepad layout.",
+  "The game can update itself. Open Options on the title screen and choose Check for Updates.",
+  "Keep the game in a folder you have write access to so the updater can replace files.",
 ] as const;

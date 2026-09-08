@@ -7,9 +7,9 @@ export function Game() {
     <section id="game" className="relative stripes-dark py-24 sm:py-28">
       <div className="mx-auto max-w-6xl px-4">
         <SectionHeading
-          kicker="The game"
-          title="One egg. Twenty waves."
-          body="Eggcentric is a top-down arena survivor built in Godot 4. Your weapons aim and fire on their own. You move, survive, and make quick loadout decisions between waves. The final wave is a boss fight. Beat it to win the run."
+          kicker="About the game"
+          title="How it plays"
+          body="Your weapons aim and fire automatically, so your job is to keep moving, dodge, and pick up the materials enemies drop. Between waves you spend those materials in the shop on new weapons, items and upgrades. Survive all 20 waves and beat the final boss to win the run."
         />
 
         <div className="mt-14 grid gap-8 lg:grid-cols-[1.15fr_1fr] lg:items-center">

@@ -62,8 +62,8 @@ export function Hero({ release }: { release: ReleaseInfo }) {
         <p className="display mt-5 text-gold text-[clamp(1.5rem,4.4vw,2.6rem)]">{TAGLINE}</p>
 
         <p className="mx-auto mt-5 max-w-2xl text-lg font-semibold text-cream-dim sm:text-xl">
-          A top-down arena survivor. Choose an egg, survive 20 waves of aliens, and build a loadout between waves.
-          Free for Windows, macOS, Linux and Steam Deck.
+          Eggcentric is a top-down arena shooter roguelite. Pick an egg, fight off 20 waves of aliens with weapons
+          that aim and fire on their own, and spend what you collect in the shop between waves.
         </p>
 
         <div className="mt-9">
@@ -71,9 +71,9 @@ export function Hero({ release }: { release: ReleaseInfo }) {
         </div>
 
         <div className="mt-10 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm font-bold text-cream-dim">
-          <span className="inline-flex items-center gap-2"><Dot color="var(--color-xp)" />Mouse, keyboard or controller</span>
-          <span className="inline-flex items-center gap-2"><Dot color="var(--color-good)" />Built-in updater</span>
-          <span className="inline-flex items-center gap-2"><Dot color="var(--color-gold)" />Made in Godot 4</span>
+          <span className="inline-flex items-center gap-2"><Dot color="var(--color-gold)" />Free</span>
+          <span className="inline-flex items-center gap-2"><Dot color="var(--color-xp)" />Windows, Mac, Linux and Steam Deck</span>
+          <span className="inline-flex items-center gap-2"><Dot color="var(--color-good)" />Keyboard and mouse or controller</span>
         </div>
       </div>
 
