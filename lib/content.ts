@@ -56,7 +56,7 @@ export const LOOP = [
 export const NUMBERS = [
   { value: "12", label: "playable eggs", art: "/art/eggs/ninja.png" },
   { value: "40+", label: "weapons", art: "/art/weapons/rocket-launcher.png" },
-  { value: "69", label: "passive items", art: "/art/items/hot-sauce.png" },
+  { value: "65+", label: "passive items", art: "/art/items/hot-sauce.png" },
   { value: "5", label: "arenas", art: "/art/pickups/vending-machine.png" },
   { value: "20", label: "waves per run", art: "/art/enemies/miniboss.png" },
   { value: "3", label: "boss fights", art: "/art/enemies/omelette.png" },
