@@ -28,4 +28,8 @@ Drop a `hero.mp4` (and optional `hero.jpg` poster) into `public/` and the hero p
 
 ## Deploy
 
-Railway service linked to this repo. Build is `npm run build`, start is `npm start`, which respects Railway's `PORT`.
+Live at [eggcentric-game.com](https://eggcentric-game.com). The Railway service `eggcentric-site` is linked to this repo's `main` branch, so every push (or merged PR) builds and deploys automatically.
+
+- Build `npm run build`, start `npm start`. `PORT=3000` is set on the service and both domains target port 3000.
+- DNS lives at Squarespace: `ALIAS @` and `CNAME www` point at the Railway targets, plus the two `_railway-verify` TXT records.
+- Variables: `REVALIDATE_SECRET`, `NEXT_PUBLIC_SITE_URL`, `PORT`.
