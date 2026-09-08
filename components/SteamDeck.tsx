@@ -10,7 +10,7 @@ export function SteamDeck() {
       <div className="mx-auto max-w-6xl px-4">
         <SectionHeading
           kicker="Steam Deck"
-          title="Runs on Steam Deck"
+          title="Runs great on Steam Deck"
           body="Eggcentric has a native Linux build, so it runs on Steam Deck without Proton. The interface is designed for the Deck's 16:10 screen and a controller. Here is how to add it to your Steam library."
         />
 

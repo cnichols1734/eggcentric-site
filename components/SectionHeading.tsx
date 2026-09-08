@@ -18,7 +18,7 @@ export function SectionHeading({ kicker, title, body, align = "center", color = 
   return (
     <div className={`mx-auto max-w-3xl ${align === "center" ? "text-center" : "text-left"}`}>
       {kicker ? (
-        <p className="mb-2 inline-block rounded-full border-[3px] border-ink bg-panel-deep px-3 py-1 text-xs font-extrabold uppercase tracking-[0.18em] text-cream-dim shadow-ink-sm">
+        <p className="mb-5 inline-block rounded-full border-[3px] border-ink bg-panel-deep px-3 py-1 text-xs font-extrabold uppercase tracking-[0.18em] text-cream-dim shadow-ink-sm">
           {kicker}
         </p>
       ) : null}
