@@ -33,7 +33,7 @@ export function Eggs() {
           ))}
         </ul>
 
-        <figure className="ink-frame tilt-2 mx-auto mt-14 max-w-4xl">
+        <figure className="ink-frame mx-auto mt-14 max-w-4xl">
           <Image
             src="/shots/eggs.jpg"
             alt="The Choose Your Egg screen showing all twelve eggs unlocked"
