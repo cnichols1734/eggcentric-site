@@ -11,9 +11,9 @@ const pub = (...p: string[]) => path.join(process.cwd(), "public", ...p);
 
 export default async function OpenGraphImage() {
   const [bg, logo, egg, font] = await Promise.all([
-    readFile(pub("shots", "swarm.jpg")),
-    readFile(pub("art", "ui", "eggcentric-logo.png")),
-    readFile(pub("art", "eggs", "ninja.png")),
+    readFile(pub("r", "shots", "swarm.jpg")),
+    readFile(pub("r", "art", "ui", "eggcentric-logo.png")),
+    readFile(pub("r", "art", "eggs", "ninja.png")),
     readFile(pub("fonts", "LuckiestGuy-Regular.ttf")),
   ]);
   const toUrl = (buf: Buffer, mime: string) => `data:${mime};base64,${buf.toString("base64")}`;
