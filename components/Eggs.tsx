@@ -9,7 +9,7 @@ export function Eggs() {
         <SectionHeading
           kicker="Characters"
           title="12 playable eggs"
-          body="Each egg has different starting stats and a rule that changes how the run plays out. The Chef gets shop discounts, the Vampire heals by dealing damage, and the Robo-Egg builds turrets that do the shooting for it. You start with the plain Egg and unlock the rest by playing."
+          body="Each egg has different starting stats and a rule that changes how the run plays out. The Chef gets shop discounts, the Vampire heals by dealing damage, and the Robo-Egg builds turrets that do the shooting for it. You start with the plain Egg and unlock the rest by playing. Your egg's perks and starting gear come with it into Survival and Adventure."
         />
 
         <ul className="mt-14 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
@@ -37,8 +37,8 @@ export function Eggs() {
           <Image
             src="/shots/eggs.jpg"
             alt="The Choose Your Egg screen showing all twelve eggs unlocked"
-            width={2000}
-            height={1255}
+            width={1600}
+            height={1004}
             sizes="(max-width: 1024px) 100vw, 896px"
             className="block h-auto w-full"
           />

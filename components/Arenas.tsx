@@ -9,7 +9,7 @@ export function Arenas() {
         <SectionHeading
           kicker="Arenas"
           title="5 arenas"
-          body="Each arena has its own hazard. Grease on the Diner Floor slows you down, hay bales on the Farmyard block shots, the Rooftop fans push you around, and the Space Station has conveyor belts. The Quarry is unlocked from the start. The rest unlock by winning runs at higher Danger levels."
+          body="Each Survival arena has its own hazard. Grease on the Diner Floor slows you down, hay bales on the Farmyard block shots, the Rooftop fans push you around, and the Space Station has conveyor belts. The Quarry is unlocked from the start. The rest unlock by winning runs at higher Danger levels. All five are in 2D and 3D Survival."
         />
 
         <ul className="mt-14 grid gap-6 md:grid-cols-2">
@@ -21,8 +21,8 @@ export function Arenas() {
               <Image
                 src={`/shots/arena-${arena.id}.jpg`}
                 alt={`${arena.name}: ${arena.desc}`}
-                width={2000}
-                height={1255}
+                width={1600}
+                height={1004}
                 sizes={i === 0 ? "(max-width: 1024px) 100vw, 1152px" : "(max-width: 768px) 100vw, 560px"}
                 className="block h-auto w-full transition duration-500 group-hover:scale-[1.03]"
               />

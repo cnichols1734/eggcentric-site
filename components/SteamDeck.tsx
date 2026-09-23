@@ -19,9 +19,9 @@ export function SteamDeck() {
             <figure className="ink-frame tilt-3">
               <Image
                 src="/shots/menu.jpg"
-                alt="The Eggcentric title screen"
-                width={2000}
-                height={1255}
+                alt="The Eggcentric Hatchery home screen"
+                width={1600}
+                height={1000}
                 sizes="(max-width: 1024px) 100vw, 520px"
                 className="block h-auto w-full"
               />

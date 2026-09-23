@@ -2,7 +2,8 @@ import Image from "next/image";
 import { RELEASES_URL } from "@/lib/releases";
 
 const LINKS = [
-  { href: "#game", label: "The game" },
+  { href: "#modes", label: "Modes" },
+  { href: "#game", label: "Survival" },
   { href: "#arenas", label: "Arenas" },
   { href: "#download", label: "Download" },
   { href: "#steam-deck", label: "Steam Deck" },
@@ -18,7 +19,7 @@ export function Nav() {
           className="pointer-events-auto flex items-center justify-between gap-4 rounded-2xl border-[3px] border-ink bg-panel/85 px-3 py-2 backdrop-blur-md shadow-ink-sm"
         >
           <a href="#top" className="flex items-center gap-2 pl-1" aria-label="Eggcentric home">
-            <Image src="/art/ui/icon.png" alt="" width={34} height={34} className="rounded-lg border-2 border-ink" priority />
+            <Image src="/art/ui/icon.png" alt="" width={34} height={34} className="rounded-lg border-2 border-ink" preload />
             <span className="display-sm text-gold text-lg leading-none pt-0.5 hidden sm:inline">Eggcentric</span>
           </a>
           <ul className="hidden md:flex items-center gap-1">

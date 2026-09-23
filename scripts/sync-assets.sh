@@ -20,6 +20,16 @@ cp "$GAME/assets/fonts/Baloo2-VF.ttf" "$PUB/fonts/"
 
 cp "$GAME/assets/sprites/ui/eggcentric-logo.png" "$PUB/art/ui/"
 cp "$GAME/assets/sprites/ui/nichmann-games.png" "$PUB/art/ui/"
+# Dark-mode logo: same black-ink artwork recolored to --color-cream for dark backgrounds.
+python3 - "$PUB/art/ui" <<'PY'
+import sys
+from PIL import Image
+d = sys.argv[1]
+src = Image.open(f"{d}/nichmann-games.png").convert("RGBA")
+out = Image.new("RGBA", src.size, (0xFF, 0xF8, 0xE8, 0))
+out.putalpha(src.getchannel("A"))
+out.save(f"{d}/nichmann-games-dark.png", optimize=True)
+PY
 cp "$GAME/assets/icon.png" "$PUB/art/ui/icon.png"
 
 for f in "$GAME"/assets/sprites/characters/egg-*-right.png; do

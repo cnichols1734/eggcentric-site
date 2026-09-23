@@ -7,13 +7,13 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: "Eggcentric - Auto-blast the alien horde",
   description:
-    "Eggcentric is a free top-down arena shooter roguelite for Windows, macOS, Linux and Steam Deck. Pick an egg, fight off 20 waves of aliens, and build your loadout in the shop between waves.",
-  keywords: ["Eggcentric", "arena survivor", "roguelite", "Godot", "Steam Deck", "free game"],
+    "Eggcentric is an arena shooter roguelite for Windows, macOS, Linux and Steam Deck. Free to download during alpha, and coming soon to Steam. Pick an egg and play Survival in 2D or 3D, or a 3D Adventure. Online co-op for up to four players.",
+  keywords: ["Eggcentric", "arena survivor", "roguelite", "3D", "co-op", "Godot", "Steam", "Steam Deck", "free game", "alpha"],
   authors: [{ name: "Nichmann Games" }],
   openGraph: {
     title: "Eggcentric - Auto-blast the alien horde",
     description:
-      "Free top-down arena shooter roguelite for Windows, macOS, Linux and Steam Deck. Pick an egg, fight off 20 waves of aliens, and build your loadout between waves.",
+      "Arena shooter roguelite for Windows, macOS, Linux and Steam Deck. Free during alpha, coming soon to Steam. Survival in 2D or 3D, a 3D Adventure mode, and online co-op.",
     url: SITE_URL,
     siteName: "Eggcentric",
     type: "website",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Eggcentric - Auto-blast the alien horde",
-    description: "Free top-down arena shooter roguelite for Windows, macOS, Linux and Steam Deck.",
+    description: "Arena shooter roguelite with 2D and 3D Survival and a 3D Adventure. Free during alpha, coming soon to Steam.",
   },
 };
 

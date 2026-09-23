@@ -1,5 +1,5 @@
 // Copy in this file is pulled from the game itself (character_db.gd, arena_db.gd,
-// README.md) so the site says exactly what the game says.
+// the Hatchery menu, RELEASE_NOTES.md) so the site says exactly what the game says.
 
 export const TAGLINE = "Auto-blast the alien horde";
 
@@ -22,8 +22,41 @@ export const ARENAS = [
   { id: "quarry", name: "The Quarry", desc: "Cracked rock, no surprises.", unlock: "Available from the start", color: "#c9c9cf" },
   { id: "diner", name: "Diner Floor", desc: "Grease slicks slow everyone who steps in them.", unlock: "Win a run", color: "#ffb35c" },
   { id: "farm", name: "Farmyard", desc: "Hay bales block shots and bodies. Use them as cover - or don't.", unlock: "Win on Danger 1", color: "#9fdc5a" },
-  { id: "rooftop", name: "Rooftop", desc: "Industrial fans shove anything in their gust.", unlock: "Win on Danger 2", color: "#8fd3ff" },
-  { id: "station", name: "Space Station", desc: "Conveyor belts carry you and the aliens along.", unlock: "Win on Danger 3", color: "#d59bff" },
+  { id: "rooftop", name: "Rooftop", desc: "Fans turn independently. Yellow arrows warn where the next gust will blow.", unlock: "Win on Danger 2", color: "#8fd3ff" },
+  { id: "station", name: "Space Station", desc: "Belts reverse independently. Yellow arrows warn which way they will carry you.", unlock: "Win on Danger 3", color: "#d59bff" },
+] as const;
+
+export const MODES = [
+  {
+    id: "survival",
+    name: "Survival",
+    style: "2D or 3D",
+    summary: "20 waves · Shops · Endless",
+    shot: "/shots/survival-3d.jpg",
+    shotAlt: "3D Survival on the Farmland with a crowd of aliens around the egg",
+    caption: "3D Survival, Farmland",
+    points: [
+      "Survive 20 timed waves and spend your gold in the shop between them.",
+      "Boss fights on waves 7, 14 and 20.",
+      "Keep going in Endless mode after a win.",
+      "Play it in 2D or 3D. All five arenas are in both.",
+    ],
+  },
+  {
+    id: "adventure",
+    name: "Adventure",
+    style: "3D",
+    summary: "Explore · Evolve · Escape",
+    shot: "/shots/adventure.jpg",
+    shotAlt: "Adventure mode in the Rocklands with a ring of aliens around the egg",
+    caption: "Adventure, Rocklands",
+    points: [
+      "One continuous 12-minute expedition through the Rocklands.",
+      "Start with your egg's gear. Each level up, pick one of three upgrades, with 3 free rerolls per run.",
+      "Optional objectives earn elemental coatings and weapon augments.",
+      "Defeat the final guardian, then survive the extraction horde.",
+    ],
+  },
 ] as const;
 
 export const LOOP = [
@@ -55,12 +88,28 @@ export const LOOP = [
 
 export const NUMBERS = [
   { value: "12", label: "playable eggs", art: "/art/eggs/ninja.png" },
-  { value: "40+", label: "weapons", art: "/art/weapons/rocket-launcher.png" },
-  { value: "65+", label: "passive items", art: "/art/items/hot-sauce.png" },
+  { value: "45", label: "weapons", art: "/art/weapons/rocket-launcher.png" },
+  { value: "14", label: "Legendary fusions", art: "/art/weapons/flamethrower.png" },
+  { value: "68", label: "passive items", art: "/art/items/hot-sauce.png" },
   { value: "5", label: "arenas", art: "/art/pickups/vending-machine.png" },
-  { value: "20", label: "waves per run", art: "/art/enemies/miniboss.png" },
-  { value: "3", label: "boss fights", art: "/art/enemies/omelette.png" },
+  { value: "86", label: "achievements", art: "/art/enemies/omelette.png" },
 ] as const;
+
+// Player-facing highlights per release. The GitHub notes are cumulative and include
+// developer detail, so the site only shows these. Add an entry for each new version.
+export const RELEASE_HIGHLIGHTS: Record<string, { headline: string; items: readonly string[] }> = {
+  "3.5.0": {
+    headline: "One Hatchery, two ways to survive",
+    items: [
+      "New Hatchery home screen. Pick your egg, then choose Survival or Adventure.",
+      "Survival can be played in 2D or 3D. Unlocks, Pantry upgrades, Egg Cartons, achievements and records carry across both.",
+      "Adventure is a 12-minute 3D expedition through the Rocklands with objectives, a final guardian and an extraction horde.",
+      "All 12 eggs have been redrawn.",
+      "Fusion works correctly in 3D Survival.",
+      "Dungeon Run is now a standalone preview in Extras. Daily Run has been removed.",
+    ],
+  },
+};
 
 export const STEAM_DECK_STEPS = [
   {
@@ -92,6 +141,6 @@ export const STEAM_DECK_STEPS = [
 export const STEAM_DECK_NOTES = [
   "The interface is designed for a 16:10 screen and a controller.",
   "Controller support uses the default Gamepad layout.",
-  "The game can update itself. Open Options on the title screen and choose Check for Updates.",
+  "The game can update itself. Open Settings in the Hatchery and choose Check for Updates.",
   "Keep the game in a folder you have write access to so the updater can replace files.",
 ] as const;

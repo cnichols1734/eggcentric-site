@@ -42,7 +42,7 @@ export function Hero({ release }: { release: ReleaseInfo }) {
         <div className="mx-auto mb-4 inline-flex items-center gap-2 rounded-full border-[3px] border-ink bg-panel-deep px-4 py-1.5 text-sm font-bold text-cream-dim shadow-ink-sm">
           <span className="inline-block h-2.5 w-2.5 rounded-full bg-good border-2 border-ink" aria-hidden />
           <span>
-            Latest: <span className="text-gold">v{release.version}</span>
+            Alpha <span className="text-gold">v{release.version}</span>
             <span className="hidden sm:inline"> · {formatDate(release.publishedAt)}</span>
           </span>
         </div>
@@ -53,7 +53,7 @@ export function Hero({ release }: { release: ReleaseInfo }) {
           alt=""
           width={1200}
           height={283}
-          priority
+          preload
           sizes="(max-width: 640px) 92vw, 820px"
           className="mx-auto w-[92vw] max-w-[820px] drop-shadow-[0_10px_0_rgba(20,23,18,0.5)] animate-wiggle"
           style={{ "--rot": "-1.2deg" } as React.CSSProperties}
@@ -62,18 +62,25 @@ export function Hero({ release }: { release: ReleaseInfo }) {
         <p className="display mt-5 text-gold text-[clamp(1.5rem,4.4vw,2.6rem)]">{TAGLINE}</p>
 
         <p className="mx-auto mt-5 max-w-2xl text-lg font-semibold text-cream-dim sm:text-xl">
-          Eggcentric is a top-down arena shooter roguelite. Pick an egg, fight off 20 waves of aliens with weapons
-          that aim and fire on their own, and spend what you collect in the shop between waves.
+          Eggcentric is an arena shooter roguelite. Pick an egg and fight off aliens with weapons that aim and fire
+          on their own. Play Survival in 2D or 3D, or take a 3D Adventure through the Rocklands.
         </p>
 
         <div className="mt-9">
           <DownloadCta sizes={sizes} />
         </div>
 
-        <div className="mt-10 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm font-bold text-cream-dim">
-          <span className="inline-flex items-center gap-2"><Dot color="var(--color-gold)" />Free</span>
+        <p className="mx-auto mt-6 max-w-xl text-base font-semibold text-cream-dim">
+          Eggcentric is in alpha. Try it now for free. It is coming to Steam soon, and the Steam page will be
+          posted here when it is ready.
+        </p>
+
+        <div className="mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm font-bold text-cream-dim">
+          <span className="inline-flex items-center gap-2"><Dot color="var(--color-gold)" />Free alpha</span>
+          <span className="inline-flex items-center gap-2"><Dot color="#66c0f4" />Coming to Steam</span>
           <span className="inline-flex items-center gap-2"><Dot color="var(--color-xp)" />Windows, Mac, Linux and Steam Deck</span>
           <span className="inline-flex items-center gap-2"><Dot color="var(--color-good)" />Keyboard and mouse or controller</span>
+          <span className="inline-flex items-center gap-2"><Dot color="#ff8a5c" />Online co-op for up to 4</span>
         </div>
       </div>
 

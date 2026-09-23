@@ -7,18 +7,18 @@ export function Game() {
     <section id="game" className="relative stripes-dark py-24 sm:py-28">
       <div className="mx-auto max-w-6xl px-4">
         <SectionHeading
-          kicker="About the game"
-          title="How it plays"
-          body="Your weapons aim and fire automatically, so your job is to keep moving, dodge, and pick up the gold enemies drop. Between waves you spend that gold in the shop on new weapons, items and upgrades. Survive all 20 waves and beat the final boss to win the run."
+          kicker="Survival"
+          title="How Survival plays"
+          body="Your weapons aim and fire automatically, so your job is to keep moving, dash out of trouble, and pick up the gold enemies drop. Between waves you spend that gold in the shop on new weapons, items and upgrades. Survive all 20 waves to win the run, then keep going in Endless if you want. Danger levels 0 to 5 make each run harder."
         />
 
         <div className="mt-14 grid gap-8 lg:grid-cols-[1.15fr_1fr] lg:items-center">
           <figure className="ink-frame tilt-1 relative">
             <Image
               src="/shots/swarm.jpg"
-              alt="Wave 13 in The Quarry with a dense swarm of aliens closing in on the egg"
-              width={2000}
-              height={1255}
+              alt="Wave 13 in The Quarry with a swarm of aliens closing in on the egg"
+              width={1600}
+              height={1004}
               sizes="(max-width: 1024px) 100vw, 60vw"
               className="block h-auto w-full"
             />

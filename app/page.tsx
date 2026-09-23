@@ -5,6 +5,7 @@ import { Eggs } from "@/components/Eggs";
 import { Footer } from "@/components/Footer";
 import { Game } from "@/components/Game";
 import { Hero } from "@/components/Hero";
+import { Modes } from "@/components/Modes";
 import { Nav } from "@/components/Nav";
 import { Showcase } from "@/components/Showcase";
 import { SteamDeck } from "@/components/SteamDeck";
@@ -21,6 +22,7 @@ export default async function Page() {
       <Nav />
       <main className="flex-1">
         <Hero release={release} />
+        <Modes />
         <Game />
         <Eggs />
         <Arenas />

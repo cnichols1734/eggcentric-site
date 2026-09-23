@@ -85,16 +85,16 @@ export interface ReleaseInfo {
  * on this because they use the permanent `latest/download` redirect.
  */
 const FALLBACK: ReleaseInfo = {
-  tag: "v2.1.3",
-  version: "2.1.3",
-  name: "Eggcentric v2.1.3",
-  publishedAt: "2026-09-07T18:56:23Z",
+  tag: "v3.5.0",
+  version: "3.5.0",
+  name: "Eggcentric v3.5.0",
+  publishedAt: "2026-09-22T04:22:20Z",
   htmlUrl: `${RELEASES_URL}/latest`,
   body: "",
   assets: [
-    { name: "Eggcentric-Linux.zip", size: 81987846, downloadCount: 0, url: latestDownloadUrl("Eggcentric-Linux.zip") },
-    { name: "Eggcentric-macOS.zip", size: 115337290, downloadCount: 0, url: latestDownloadUrl("Eggcentric-macOS.zip") },
-    { name: "Eggcentric-Windows.zip", size: 91559601, downloadCount: 0, url: latestDownloadUrl("Eggcentric-Windows.zip") },
+    { name: "Eggcentric-Linux.zip", size: 678313677, downloadCount: 0, url: latestDownloadUrl("Eggcentric-Linux.zip") },
+    { name: "Eggcentric-macOS.zip", size: 712777750, downloadCount: 0, url: latestDownloadUrl("Eggcentric-macOS.zip") },
+    { name: "Eggcentric-Windows.zip", size: 687885623, downloadCount: 0, url: latestDownloadUrl("Eggcentric-Windows.zip") },
   ],
   checksums: {},
   stale: true,

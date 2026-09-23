@@ -28,7 +28,7 @@ export function Downloads({ release }: { release: ReleaseInfo }) {
         <SectionHeading
           kicker={`Version ${release.version} · ${formatDate(release.publishedAt)}`}
           title="Download"
-          body="Eggcentric is free. There is no installer and no account. Download the zip for your system, unzip it, and run the game. The builds are not code-signed yet, so Windows and macOS will show a warning the first time you open it. The steps under each download explain how to get past it."
+          body="Eggcentric is in alpha and free to download. A Steam release is coming; until then, this page and GitHub are where to get the game. There is no installer and no account. Download the zip for your system, unzip it, and run the game. The builds are not code-signed yet, so Windows and macOS will show a warning the first time you open it. The steps under each download explain how to get past it."
         />
 
         <ul className="mt-14 grid gap-6 lg:grid-cols-3">
@@ -88,7 +88,7 @@ export function Downloads({ release }: { release: ReleaseInfo }) {
           <a href={RELEASES_URL} target="_blank" rel="noreferrer" className="text-gold underline decoration-2 underline-offset-2 hover:text-cream">
             GitHub releases page
           </a>
-          . The game can also update itself from the Options menu on the title screen.
+          . The game can also update itself from Settings in the Hatchery.
           {release.stale ? " Version info shown is the last known release." : ""}
         </p>
       </div>

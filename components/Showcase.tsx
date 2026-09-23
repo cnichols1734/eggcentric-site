@@ -12,29 +12,29 @@ const SHOTS = [
     src: "/shots/fusion.jpg",
     alt: "Two tier-3 weapons fusing into a new weapon with sparks flying",
     title: "Fusion",
-    body: "Two of the same weapon combine into a higher tier. Some pairs of different weapons have their own fusion recipe.",
+    body: "Two of the same weapon combine into a higher tier. Some pairs of different weapons fuse into one of 14 Legendary weapons.",
   },
   {
     src: "/shots/miniboss.jpg",
-    alt: "The wave 7 mini-boss arena",
+    alt: "The wave 7 mini-boss on the Farmyard",
     title: "Mini-bosses",
-    body: "A mini-boss shows up on waves 7 and 14. Wave 20 has two at once.",
+    body: "A mini-boss shows up on wave 7. The wave 20 finale has two at once.",
   },
   {
     src: "/shots/omelette.jpg",
-    alt: "The Omelette boss charging at the egg on wave 14",
+    alt: "The Omelette boss on the Rooftop on wave 14",
     title: "The Omelette",
-    body: "Bosses show where they are about to charge or land before they do it, so you have a moment to get out of the way.",
+    body: "The Omelette arrives on wave 14 in 2D Survival. Bosses show where they are about to charge or land before they do it, so you have a moment to get out of the way.",
   },
   {
-    src: "/shots/levelup.jpg",
-    alt: "The level-up screen offering a choice of stat upgrades",
-    title: "Level up",
-    body: "Gold doubles as XP. When you level up, you choose a stat upgrade right there in the middle of the wave.",
+    src: "/shots/adventure-upgrade.jpg",
+    alt: "The Adventure level-up screen offering three upgrades, including a new Flare Gun",
+    title: "Adventure upgrades",
+    body: "In Adventure, each level up offers three upgrades. Every three levels a new weapon slot opens.",
   },
   {
     src: "/shots/arena-station.jpg",
-    alt: "A Horde Rush event on the Space Station with conveyor belts",
+    alt: "A mid-wave event on the Space Station with conveyor belts",
     title: "Mid-wave events",
     body: "Horde rushes, meteor showers and other events can hit partway through a wave. A banner warns you before they start.",
   },
@@ -53,8 +53,8 @@ export function Showcase() {
                 <Image
                   src={s.src}
                   alt={s.alt}
-                  width={2000}
-                  height={1255}
+                  width={1600}
+                  height={1004}
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   className="block h-auto w-full"
                 />
