@@ -20,7 +20,7 @@ export function Eggs() {
             >
               <div className="relative mb-3 h-24 w-24">
                 <Image
-                  src={`/art/eggs/${egg.id}.png`}
+                  src={`/r/art/eggs/${egg.id}.png`}
                   alt=""
                   fill
                   sizes="96px"
@@ -35,7 +35,7 @@ export function Eggs() {
 
         <figure className="ink-frame mx-auto mt-14 max-w-4xl">
           <Image
-            src="/shots/eggs.jpg"
+            src="/r/shots/eggs.jpg"
             alt="The Choose Your Egg screen showing all twelve eggs unlocked"
             width={1600}
             height={1004}

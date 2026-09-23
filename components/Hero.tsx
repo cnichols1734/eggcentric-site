@@ -49,7 +49,7 @@ export function Hero({ release }: { release: ReleaseInfo }) {
 
         <h1 className="sr-only">Eggcentric</h1>
         <Image
-          src="/art/ui/eggcentric-logo.png"
+          src="/r/art/ui/eggcentric-logo.png"
           alt=""
           width={1200}
           height={283}

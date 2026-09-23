@@ -15,7 +15,7 @@ export function Game() {
         <div className="mt-14 grid gap-8 lg:grid-cols-[1.15fr_1fr] lg:items-center">
           <figure className="ink-frame tilt-1 relative">
             <Image
-              src="/shots/swarm.jpg"
+              src="/r/shots/swarm.jpg"
               alt="Wave 13 in The Quarry with a swarm of aliens closing in on the egg"
               width={1600}
               height={1004}

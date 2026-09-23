@@ -14,7 +14,7 @@ export function Modes() {
 
         <figure className="ink-frame tilt-2 mx-auto mt-14 max-w-4xl">
           <Image
-            src="/shots/menu.jpg"
+            src="/r/shots/menu.jpg"
             alt="The Hatchery home screen with Survival and Adventure, a 2D or 3D play style toggle, and Co-op"
             width={1600}
             height={1000}

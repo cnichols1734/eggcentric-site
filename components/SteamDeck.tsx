@@ -18,7 +18,7 @@ export function SteamDeck() {
           <div className="space-y-6">
             <figure className="ink-frame tilt-3">
               <Image
-                src="/shots/menu.jpg"
+                src="/r/shots/menu.jpg"
                 alt="The Eggcentric Hatchery home screen"
                 width={1600}
                 height={1000}

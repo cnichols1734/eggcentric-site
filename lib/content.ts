@@ -32,7 +32,7 @@ export const MODES = [
     name: "Survival",
     style: "2D or 3D",
     summary: "20 waves · Shops · Endless",
-    shot: "/shots/survival-3d.jpg",
+    shot: "/r/shots/survival-3d.jpg",
     shotAlt: "3D Survival on the Farmland with a crowd of aliens around the egg",
     caption: "3D Survival, Farmland",
     points: [
@@ -47,7 +47,7 @@ export const MODES = [
     name: "Adventure",
     style: "3D",
     summary: "Explore · Evolve · Escape",
-    shot: "/shots/adventure.jpg",
+    shot: "/r/shots/adventure.jpg",
     shotAlt: "Adventure mode in the Rocklands with a ring of aliens around the egg",
     caption: "Adventure, Rocklands",
     points: [
@@ -64,35 +64,35 @@ export const LOOP = [
     n: 1,
     title: "Survive the wave",
     body: "Each wave runs on a timer. Your weapons fire on their own while you move and dodge. Later waves last longer and spawn more enemies.",
-    art: "/art/enemies/alien-purple.png",
+    art: "/r/art/enemies/alien-purple.png",
   },
   {
     n: 2,
     title: "Collect gold",
     body: "Enemies drop gold when they die. Gold is both your money and your XP, and it gets pulled toward you when you are close.",
-    art: "/art/pickups/gold3.png",
+    art: "/r/art/pickups/gold3.png",
   },
   {
     n: 3,
     title: "Level up",
     body: "Each level up gives you a choice of stat upgrades. The gold you have collected is still yours to spend in the shop.",
-    art: "/art/pickups/chest-open.png",
+    art: "/r/art/pickups/chest-open.png",
   },
   {
     n: 4,
     title: "Shop between waves",
     body: "Buy weapons (up to six at a time) and passive items, reroll the offers, or lock one to buy later. Two of the same weapon combine into a higher tier.",
-    art: "/art/weapons/shotgun.png",
+    art: "/r/art/weapons/shotgun.png",
   },
 ] as const;
 
 export const NUMBERS = [
-  { value: "12", label: "playable eggs", art: "/art/eggs/ninja.png" },
-  { value: "45", label: "weapons", art: "/art/weapons/rocket-launcher.png" },
-  { value: "14", label: "Legendary fusions", art: "/art/weapons/flamethrower.png" },
-  { value: "68", label: "passive items", art: "/art/items/hot-sauce.png" },
-  { value: "5", label: "arenas", art: "/art/pickups/vending-machine.png" },
-  { value: "86", label: "achievements", art: "/art/enemies/omelette.png" },
+  { value: "12", label: "playable eggs", art: "/r/art/eggs/ninja.png" },
+  { value: "45", label: "weapons", art: "/r/art/weapons/rocket-launcher.png" },
+  { value: "14", label: "Legendary fusions", art: "/r/art/weapons/flamethrower.png" },
+  { value: "68", label: "passive items", art: "/r/art/items/hot-sauce.png" },
+  { value: "5", label: "arenas", art: "/r/art/pickups/vending-machine.png" },
+  { value: "86", label: "achievements", art: "/r/art/enemies/omelette.png" },
 ] as const;
 
 // Player-facing highlights per release. The GitHub notes are cumulative and include

@@ -3,37 +3,37 @@ import { SectionHeading } from "./SectionHeading";
 
 const SHOTS = [
   {
-    src: "/shots/shop.jpg",
+    src: "/r/shots/shop.jpg",
     alt: "The between-wave shop with four offers, a weapon rack and a stats panel",
     title: "The shop",
     body: "Buy weapons and passive items, reroll the offers, or lock one to buy next wave. Your stats update as you shop.",
   },
   {
-    src: "/shots/fusion.jpg",
+    src: "/r/shots/fusion.jpg",
     alt: "Two tier-3 weapons fusing into a new weapon with sparks flying",
     title: "Fusion",
     body: "Two of the same weapon combine into a higher tier. Some pairs of different weapons fuse into one of 14 Legendary weapons.",
   },
   {
-    src: "/shots/miniboss.jpg",
+    src: "/r/shots/miniboss.jpg",
     alt: "The wave 7 mini-boss on the Farmyard",
     title: "Mini-bosses",
     body: "A mini-boss shows up on wave 7. The wave 20 finale has two at once.",
   },
   {
-    src: "/shots/omelette.jpg",
+    src: "/r/shots/omelette.jpg",
     alt: "The Omelette boss on the Rooftop on wave 14",
     title: "The Omelette",
     body: "The Omelette arrives on wave 14 in 2D Survival. Bosses show where they are about to charge or land before they do it, so you have a moment to get out of the way.",
   },
   {
-    src: "/shots/adventure-upgrade.jpg",
+    src: "/r/shots/adventure-upgrade.jpg",
     alt: "The Adventure level-up screen offering three upgrades, including a new Flare Gun",
     title: "Adventure upgrades",
     body: "In Adventure, each level up offers three upgrades. Every three levels a new weapon slot opens.",
   },
   {
-    src: "/shots/arena-station.jpg",
+    src: "/r/shots/arena-station.jpg",
     alt: "A mid-wave event on the Space Station with conveyor belts",
     title: "Mid-wave events",
     body: "Horde rushes, meteor showers and other events can hit partway through a wave. A banner warns you before they start.",

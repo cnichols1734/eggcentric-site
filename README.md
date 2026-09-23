@@ -16,7 +16,7 @@ npm install
 npm run dev
 ```
 
-Game art, fonts and the logo are copied from the game repo with `npm run sync-assets` (expects `~/brotato-clone`, or set `EGGCENTRIC_GAME_DIR`). Screenshots in `public/shots/` were captured with the game's built-in `EGGCENTRIC_SHOT` capture mode.
+Game art, fonts and the logo are copied from the game repo with `npm run sync-assets` (expects `~/brotato-clone`, or set `EGGCENTRIC_GAME_DIR`). Screenshots in `public/r/shots/` were captured with the game's built-in `EGGCENTRIC_SHOT` capture mode.
 
 ## Environment
 

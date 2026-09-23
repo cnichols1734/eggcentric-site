@@ -19,7 +19,7 @@ export function Arenas() {
               className={`ink-frame group relative ${i === 0 ? "md:col-span-2" : ""} ${i % 2 ? "tilt-2" : "tilt-3"}`}
             >
               <Image
-                src={`/shots/arena-${arena.id}.jpg`}
+                src={`/r/shots/arena-${arena.id}.jpg`}
                 alt={`${arena.name}: ${arena.desc}`}
                 width={1600}
                 height={1004}

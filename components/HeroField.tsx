@@ -27,28 +27,28 @@ const COLUMN_HALF = 400;
 
 const SPRITES: Sprite[] = [
   // Top and bottom bands are free of content on every screen size.
-  { src: "/art/enemies/alien-orange.png", side: "top", x: 58, y: 96, size: 42, depth: 0.22, rot: 10, anim: "drift", delay: 2.8 },
-  { src: "/art/fx/spawn-x.png", side: "top", x: 30, y: 110, size: 32, depth: 0.2, rot: 12, anim: "wiggle", delay: 0.5 },
-  { src: "/art/pickups/gold4.png", side: "top", x: 24, y: 150, size: 34, depth: 0.6, rot: 15, anim: "bob", delay: 1.9 },
-  { src: "/art/pickups/gold2.png", side: "top", x: 72, y: 140, size: 26, depth: 0.62, rot: -12, anim: "bob", delay: 0.4 },
-  { src: "/art/enemies/frog.png", side: "bottom", x: 36, y: 40, size: 62, depth: 0.5, rot: -3, anim: "bob", delay: 2.4 },
-  { src: "/art/fx/spawn-x.png", side: "bottom", x: 66, y: 70, size: 30, depth: 0.2, rot: -6, anim: "wiggle", delay: 1.7 },
-  { src: "/art/pickups/honey-health.png", side: "bottom", x: 54, y: 30, size: 32, depth: 0.58, rot: 8, anim: "bob", delay: 2.9, hideMobile: true },
+  { src: "/r/art/enemies/alien-orange.png", side: "top", x: 58, y: 96, size: 42, depth: 0.22, rot: 10, anim: "drift", delay: 2.8 },
+  { src: "/r/art/fx/spawn-x.png", side: "top", x: 30, y: 110, size: 32, depth: 0.2, rot: 12, anim: "wiggle", delay: 0.5 },
+  { src: "/r/art/pickups/gold4.png", side: "top", x: 24, y: 150, size: 34, depth: 0.6, rot: 15, anim: "bob", delay: 1.9 },
+  { src: "/r/art/pickups/gold2.png", side: "top", x: 72, y: 140, size: 26, depth: 0.62, rot: -12, anim: "bob", delay: 0.4 },
+  { src: "/r/art/enemies/frog.png", side: "bottom", x: 36, y: 40, size: 62, depth: 0.5, rot: -3, anim: "bob", delay: 2.4 },
+  { src: "/r/art/fx/spawn-x.png", side: "bottom", x: 66, y: 70, size: 30, depth: 0.2, rot: -6, anim: "wiggle", delay: 1.7 },
+  { src: "/r/art/pickups/honey-health.png", side: "bottom", x: 54, y: 30, size: 32, depth: 0.58, rot: 8, anim: "bob", delay: 2.9, hideMobile: true },
 
   // Left flank, outside the column.
-  { src: "/art/enemies/alien-purple.png", side: "left", x: 150, y: 20, size: 52, depth: 0.25, rot: -8, anim: "drift", delay: 0.3, hideMobile: true },
-  { src: "/art/enemies/ufo.png", side: "left", x: 60, y: 38, size: 96, depth: 0.5, rot: -4, anim: "drift", delay: 0.6, hideMobile: true },
-  { src: "/art/eggs/ninja.png", side: "left", x: 40, y: 60, size: 150, depth: 0.9, rot: -7, anim: "bob", delay: 0.8, hideMobile: true },
-  { src: "/art/enemies/alien-green.png", side: "left", x: 200, y: 74, size: 44, depth: 0.28, rot: 4, anim: "drift", delay: 2.1, hideMobile: true },
-  { src: "/art/enemies/miniboss.png", side: "left", x: 90, y: 88, size: 110, depth: 0.8, rot: 3, anim: "bob", delay: 1.2, hideMobile: true },
+  { src: "/r/art/enemies/alien-purple.png", side: "left", x: 150, y: 20, size: 52, depth: 0.25, rot: -8, anim: "drift", delay: 0.3, hideMobile: true },
+  { src: "/r/art/enemies/ufo.png", side: "left", x: 60, y: 38, size: 96, depth: 0.5, rot: -4, anim: "drift", delay: 0.6, hideMobile: true },
+  { src: "/r/art/eggs/ninja.png", side: "left", x: 40, y: 60, size: 150, depth: 0.9, rot: -7, anim: "bob", delay: 0.8, hideMobile: true },
+  { src: "/r/art/enemies/alien-green.png", side: "left", x: 200, y: 74, size: 44, depth: 0.28, rot: 4, anim: "drift", delay: 2.1, hideMobile: true },
+  { src: "/r/art/enemies/miniboss.png", side: "left", x: 90, y: 88, size: 110, depth: 0.8, rot: 3, anim: "bob", delay: 1.2, hideMobile: true },
 
   // Right flank.
-  { src: "/art/enemies/alien-blue.png", side: "right", x: 170, y: 16, size: 48, depth: 0.3, rot: 6, anim: "drift", delay: 1.4, flip: true, hideMobile: true },
-  { src: "/art/eggs/pyro.png", side: "right", x: 30, y: 32, size: 140, depth: 0.95, rot: 8, anim: "bob", delay: 1.6, flip: true, hideMobile: true },
-  { src: "/art/enemies/mushroom.png", side: "right", x: 80, y: 54, size: 74, depth: 0.55, rot: 6, anim: "bob", delay: 1.1, flip: true, hideMobile: true },
-  { src: "/art/enemies/scorpion.png", side: "right", x: 190, y: 70, size: 72, depth: 0.48, rot: 5, anim: "drift", delay: 0.2, hideMobile: true },
-  { src: "/art/enemies/alien-red.png", side: "right", x: 120, y: 80, size: 50, depth: 0.32, rot: -5, anim: "drift", delay: 0.9, hideMobile: true },
-  { src: "/art/eggs/tank.png", side: "right", x: 50, y: 90, size: 120, depth: 0.85, rot: 4, anim: "wiggle", delay: 2.2, hideMobile: true },
+  { src: "/r/art/enemies/alien-blue.png", side: "right", x: 170, y: 16, size: 48, depth: 0.3, rot: 6, anim: "drift", delay: 1.4, flip: true, hideMobile: true },
+  { src: "/r/art/eggs/pyro.png", side: "right", x: 30, y: 32, size: 140, depth: 0.95, rot: 8, anim: "bob", delay: 1.6, flip: true, hideMobile: true },
+  { src: "/r/art/enemies/mushroom.png", side: "right", x: 80, y: 54, size: 74, depth: 0.55, rot: 6, anim: "bob", delay: 1.1, flip: true, hideMobile: true },
+  { src: "/r/art/enemies/scorpion.png", side: "right", x: 190, y: 70, size: 72, depth: 0.48, rot: 5, anim: "drift", delay: 0.2, hideMobile: true },
+  { src: "/r/art/enemies/alien-red.png", side: "right", x: 120, y: 80, size: 50, depth: 0.32, rot: -5, anim: "drift", delay: 0.9, hideMobile: true },
+  { src: "/r/art/eggs/tank.png", side: "right", x: 50, y: 90, size: 120, depth: 0.85, rot: 4, anim: "wiggle", delay: 2.2, hideMobile: true },
 ];
 
 function place(s: Sprite): React.CSSProperties {
