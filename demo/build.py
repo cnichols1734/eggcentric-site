@@ -135,6 +135,31 @@ def godot(binary: str, *args: str, timeout: int = 1800) -> None:
         sys.exit(f"godot exited {res.returncode}")
 
 
+def write_manifest(out: Path) -> None:
+    """Home-screen install: opening the demo from an icon drops the browser bar,
+    which is the only way to get a full-screen page on iPhone."""
+    for size in (192, 512):
+        subprocess.run(["sips", "-z", str(size), str(size), str(out / "index.icon.png"),
+                        "--out", str(out / f"icon-{size}.png")], check=True, capture_output=True)
+    manifest = {
+        "name": "Eggcentric web demo",
+        "short_name": "Eggcentric",
+        "start_url": "./index.html",
+        "scope": "./",
+        "display": "standalone",
+        "display_override": ["fullscreen", "standalone"],
+        "orientation": "landscape",
+        "background_color": "#1d1822",
+        "theme_color": "#1d1822",
+        "icons": [
+            {"src": "icon-192.png", "sizes": "192x192", "type": "image/png"},
+            {"src": "icon-512.png", "sizes": "512x512", "type": "image/png"},
+            {"src": "index.apple-touch-icon.png", "sizes": "180x180", "type": "image/png"},
+        ],
+    }
+    (out / "manifest.webmanifest").write_text(json.dumps(manifest, indent=2) + "\n")
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--game", default=str(Path.home() / "brotato-clone"))
@@ -154,6 +179,8 @@ def main() -> None:
         shutil.rmtree(OUT_ROOT)
     out.mkdir(parents=True)
     godot(args.godot, "--export-release", "Web", str(out / "index.html"))
+
+    write_manifest(out)
 
     files = {p.name: p.stat().st_size for p in sorted(out.iterdir())}
     too_big = [n for n, s in files.items() if s > 95 * 1024 * 1024]
