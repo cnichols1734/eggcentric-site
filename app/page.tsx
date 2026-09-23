@@ -1,5 +1,6 @@
 import { Arenas } from "@/components/Arenas";
 import { Changelog } from "@/components/Changelog";
+import { Demo } from "@/components/Demo";
 import { Downloads } from "@/components/Downloads";
 import { Eggs } from "@/components/Eggs";
 import { Footer } from "@/components/Footer";
@@ -23,6 +24,7 @@ export default async function Page() {
       <main className="flex-1">
         <Hero release={release} />
         <Modes />
+        <Demo />
         <Game />
         <Eggs />
         <Arenas />

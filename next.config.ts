@@ -12,6 +12,11 @@ const nextConfig: NextConfig = {
         source: "/:path(fonts|r)/:file*",
         headers: [{ key: "Cache-Control", value: "public, max-age=86400" }],
       },
+      {
+        // Versioned by game version in the path; short TTL covers same-version rebuilds.
+        source: "/demo/:path*",
+        headers: [{ key: "Cache-Control", value: "public, max-age=3600" }],
+      },
     ];
   },
 };

@@ -3,6 +3,7 @@ import { RELEASES_URL } from "@/lib/releases";
 
 const LINKS = [
   { href: "#modes", label: "Modes" },
+  { href: "#demo", label: "Demo" },
   { href: "#game", label: "Survival" },
   { href: "#arenas", label: "Arenas" },
   { href: "#download", label: "Download" },

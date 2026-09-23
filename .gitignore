@@ -20,6 +20,9 @@
 # production
 /build
 
+# web demo scratch copy of the game (demo/build.py)
+/demo/.work/
+
 # misc
 .DS_Store
 *.pem
